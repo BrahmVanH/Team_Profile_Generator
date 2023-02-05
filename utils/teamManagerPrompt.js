@@ -2,6 +2,19 @@ const teamManagerQuestions = [
 
     /*ADD NAME OF COMPANY QUESTIONS TO ADD EXTRA TO TOP OF WEBPAGE*/
     {
+        name: 'companyName',
+        type: 'input',
+        message: "Please enter your company or Team's name",
+        validate: companyNameInput => {
+            if(!companyNameInput) {
+                console.log("You must enter a name for your company or team!");
+                return false;
+            } if (companyNameInput) {
+                return true;
+            }
+        }
+    },
+    {
         name: 'teamManagerName',
         type: 'input',
         message: "Please enter your Team Manager's name",
@@ -56,34 +69,21 @@ const teamManagerQuestions = [
     
 ]
 
-const inquireWhatNext = () => {
-    inquirer.prompt(whatNext)
-    .then()
-}
 
-
-const inquireTeamManager = () => {
-    inquirer.prompt(teamManagerQuestions)
-    .then()
-} 
-
-const inquireEngineer = () => {
-    inquirer.prompt(engineerQuestions)
-    .then()
-}
-
-const inquireIntern = () => {
-    inquirer.prompt(internQuestions);
-}
 
 
 
     const whatNext = [
-    {
-        name: 'whatNext',
-        type: 'list',
-        message: "What would you like to do next?",
-        choices: ["Add an engineer to your team", "Add an intern to your team", "Finish building team"],
-        
-    },
+        {
+            name: 'whatNext',
+            type: 'list',
+            message: "What would you like to do next?",
+            choices: ["Add an engineer to your team", "Add an intern to your team", "Finish building team"],
+            
+        },
 ]
+
+
+
+
+

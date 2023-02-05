@@ -32,7 +32,40 @@ Handling of answers:
     formatAnswerContentToHtml();
     createTemplateHtml();
     renderHtml(); this will use the returns of the above two functions to create the final product
+
+companyInfoPrompt
+    function to call inquirer with questionsusern
+
+teamManagerPrompt
+    function to call inquirer with questions
+
+employeeClass
+    team manager subclass
+    engineer subclass
+    intern subclass
     
 
+engineerPrompt
+    function to call inquirer with questions
+
+internPrompt
+    function to call inquirer with questions
+
+index
+    series of calls to organize flow of application
+    call init()
+
+
+FLOW:
+    Initiate 
+    Prompts for manager's information
+    Process manager's information 
+    whatNext
+    prompt for engineers information
+    process
+    whatnext
+    process interns information
+    whatnext
+    Build HTML
 
 

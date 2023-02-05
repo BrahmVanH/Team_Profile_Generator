@@ -43,7 +43,7 @@ const internQuestions = [
     },
     {
         name: 'internSchool',
-        type: 'inpput',
+        type: 'input',
         message: "Please enter your intern's school name.",
         when: (answers) => answers.whatNext === 'Add an intern to your team',
         validate: internOfficeNumberInput => {
