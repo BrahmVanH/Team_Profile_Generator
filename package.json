@@ -1,0 +1,25 @@
+{
+  "name": "team_profile_generator",
+  "version": "1.0.0",
+  "description": "Prompts for user input\r Asks for team members information\r     GitHub username, name, email team-role\r Creates an HTML file that displays each team-members information\r Email addresses should be clickable and open default email service and populates addressee field \r GitHub username should be clickable and open GitHub profile",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrahmVanH/Team_Profile_Generator.git"
+  },
+  "author": "Brahm Van Houzen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrahmVanH/Team_Profile_Generator/issues"
+  },
+  "homepage": "https://github.com/BrahmVanH/Team_Profile_Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}

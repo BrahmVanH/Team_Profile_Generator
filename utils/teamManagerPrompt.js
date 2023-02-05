@@ -70,18 +70,26 @@ const teamManagerQuestions = [
 ]
 
 
-
-
-
-    const whatNext = [
-        {
-            name: 'whatNext',
-            type: 'list',
-            message: "What would you like to do next?",
-            choices: ["Add an engineer to your team", "Add an intern to your team", "Finish building team"],
-            
-        },
+const whatNext = [
+    {
+        name: 'whatNext',
+        type: 'list',
+        message: "What would you like to do next?",
+        choices: ["Add an engineer to your team", "Add an intern to your team", "Finish building team"],
+        validate: whatNextInput => {
+            if(whatNextInput) {
+                return true;
+            } if(!whatNextInput) {
+                console.log("It is helpful to include a brief overview of the features that users can expect in the application. If you wish to leave out features, enter 'N/A'");
+                return false;
+            }
+        },  
+    },
 ]
+
+module.exports = teamManagerQuestions;
+module.exports = whatNext;
+
 
 
 

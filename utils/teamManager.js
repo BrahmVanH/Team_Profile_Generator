@@ -5,6 +5,7 @@ class Manager extends Employee {
         super(employeeName, "Team Manager", employeeId, email)
         this.officeNumber = officeNumber
     }
+}
 
    
 

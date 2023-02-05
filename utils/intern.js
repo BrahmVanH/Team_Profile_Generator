@@ -6,6 +6,7 @@ class Intern extends Employee {
         super(employeeName, "Intern", employeeId, email);
         this.school = school;
     }
+}
 
 
 module.exports = Intern;
