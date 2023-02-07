@@ -2,6 +2,7 @@ class Employee {
 
     constructor(employeeName, employeeType, employeeId, email){
         this.employeeName = employeeName;
+        this.employeeType = employeeType;
         this.employeeId = employeeId;
         this.email = email;
     }

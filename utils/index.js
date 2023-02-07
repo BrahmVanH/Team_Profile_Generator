@@ -115,6 +115,8 @@ const askForIntern = () => {
             })
 }
 
+// ** USE ANIMALS.JSON IN 11-EXPRESS/08-STU... MODULE IN BOOTCAMP STUFF AS TEMPLATE FOR CREATING TEAM MEMBER CARDS.
+
 const startApp = () => {
     promptManager();
 }
