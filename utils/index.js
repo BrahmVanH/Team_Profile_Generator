@@ -1,8 +1,19 @@
 const inquirer = require('inquirer');
+const path = require('path');
+const fs = require('fs');
+
 const teamManagerQuestions = require('./teamManagerPrompt');
-const Manager = require('./teamManager');
-const Engineer = require('./engineer')
-const Intern = require('./intern');
+
+const htmlContent = require('./htmlContent.js');
+
+const Manager = require('../lib/teamManager');
+const Engineer = require('../lib/engineer')
+const Intern = require('../lib/intern');
+const renderMainHtmlContent = require('./htmlContent.js');
+
+const dist_dir = path.resolve(__dirname, 'dist');
+
+const outputPath = path.join(dist_dir, 'teamProfile.html');
 
 const teamMembers = []
 
@@ -23,7 +34,7 @@ const askWhatNext = () => {
             askForIntern();
         } else {
             console.log("Finished");
-            console.log(teamMembers);
+            createTeamProfileHtml();
             
         }
     })
@@ -65,9 +76,9 @@ const askForEngineer = () => {
                
             },
             {
-                name: 'engineerOfficeNumber',
-                type: 'number',
-                message: "Please enter your engineer's office number, if applicable.",
+                name: 'engineerGitHubUserName',
+                type: 'input',
+                message: "Please enter your engineer's GitHub username",
                 
             },
         ])
@@ -121,4 +132,16 @@ const startApp = () => {
     promptManager();
 }
 startApp();
+
+
+const createTeamProfileHtml= () => {
+    if (!fs.existsSync(dist_dir)) {
+        fs.mkdirSync(dist_dir);
+    } else {
+        fs.writeFileSync(outputPath, renderMainHtmlContent(teamMembers), 'utf-8');
+        console.log("Check the 'dist' folder for your Team Profile!");
+    }
+}
+
+module.export = teamMembers;
 

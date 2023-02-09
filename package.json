@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/BrahmVanH/Team_Profile_Generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.4",
+    "path": "^0.12.7"
   }
 }
