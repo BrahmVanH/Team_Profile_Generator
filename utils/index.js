@@ -44,7 +44,7 @@ const promptManager =  () => {
     inquirer
         .prompt(teamManagerQuestions)
             .then((input) => {
-                const manager = new Manager(input.name, input.teamManagerEmployeeId, input.teamManagerEmail, input.teamManagerOfficeNumber )
+                const manager = new Manager(input.teamManagerName, input.teamManagerEmployeeId, input.teamManagerEmail, input.teamManagerOfficeNumber )
                 teamMembers.push(manager);
                 askWhatNext();
             })
