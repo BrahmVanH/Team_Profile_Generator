@@ -8,7 +8,7 @@
   This project was created to aid in the logistics and organization of a firm's team. This allows a user to input the members of their team, their roles, and contact information. The application uses this information and creates a dashboard containing a series of cards for each member of the team. The cards will display the information input by the user.
 
   Link to Github repo: https://github.com/BrahmVanH/Team_Profile_Generator
-  Lin to deployed page: https://brahmvanh.github.io/Team_Profile_Generator/
+  
   
   ## Table of Contents
 
