@@ -44,7 +44,7 @@ const renderTeam = (team) => {
             <div>
                 <p>ID: ${engineer.employeeId}</p>
                 <a href="mailto:${engineer.employeeEmail}">${engineer.employeeEmail}</a>
-                <p>GitHub UserName: <a href="github.com/${engineer.gitHubUserName}">${engineer.gitHubUserName}</a></p>
+                <p>GitHub UserName: <a href="https://github.com/${engineer.gitHubUserName}">${engineer.gitHubUserName}</a></p>
             </div>
         </div> 
 
@@ -79,6 +79,7 @@ const renderMainHtmlContent = (team) => `
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../../assets/style.css">
         <title>Team Profiles</title>
     </head>

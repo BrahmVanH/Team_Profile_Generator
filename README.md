@@ -1,71 +1,59 @@
-# Team_Profile_Generator
+# Team Profile Generator
 
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
-**STILL NEED TO DO: 
-** Make email addresses clickable
-** Maybe add a cute little symbol to cards
-** Manager Name keeps rendering undefined
-** gitHub username still rendering undefined (probably capitalization somewhere)
+  
+  ## Description 
+  
+  This project was created to aid in the logistics and organization of a firm's team. This allows a user to input the members of their team, their roles, and contact information. The application uses this information and creates a dashboard containing a series of cards for each member of the team. The cards will display the information input by the user.
 
+  Link to Github repo: https://github.com/BrahmVanH/Team_Profile_Generator
+  Lin to deployed page: https://brahmvanh.github.io/Team_Profile_Generator/
+  
+  ## Table of Contents
 
-## REquirements
-Prompts for user input
-Asks for team members information
-    GitHub username, name, email team-role
-Creates an HTML file that displays each team-members information
-Email addresses should be clickable and open default email service and populates addressee field 
-GitHub username should be clickable and open GitHub profile
+  ⋆[Installation](#Installation)
+  ⋆[Usage](#Usage)
+  ⋆[Credits](#Credits)
+  ⋆[License](#License)
+  ⋆[Features](#Features)
+  ⋆[Contributions](#Contributions)
+  ⋆[Test](#Contributions)
 
+  ## Installation 
 
+  Upon cloning of the repository, use your CLI to navigate to the main folder and enter 'npm install' to install the necessary dependencies.
 
-Functions:
+  ## Usage
 
-Init() - needs to initiate the initial prompt, calls functions to initiate inquirer prompts and awaits the process of handling the answers
+  From CLI, navigate to 'utils' folder and enter 'node index.js'. Follow the question prompts.
 
-Collection of answers: 
-    Feed answers.teamManager... into a subclass (manager) of class (Employee)
-    Feed answers.engineer into a subclass (engineer) of class (Employee)
-    Feed answers.intern into a subclass (intern) of class (employee)
+  ## Credits 
 
-Handling of answers:
-    Writetofile();
-    formatAnswerContentToHtml();
-    createTemplateHtml();
-    renderHtml(); this will use the returns of the above two functions to create the final product
+  N/A
 
-companyInfoPrompt
-    function to call inquirer with questionsusern
+  ## License
 
-teamManagerPrompt
-    function to call inquirer with questions
+  (https://opensource.org/licenses/MIT)
+  
 
-employeeClass
-    team manager subclass
-    engineer subclass
-    intern subclass
-    
+  ## Features
 
-engineerPrompt
-    function to call inquirer with questions
+  Inquirer v8.2.4
 
-internPrompt
-    function to call inquirer with questions
+  ## Contributions
 
-index
-    series of calls to organize flow of application
-    call init()
+  N/A
 
+  ## Test
 
-FLOW:
-    Initiate 
-    Prompts for manager's information
-    Process manager's information 
-    whatNext
-    prompt for engineers information
-    process
-    whatnext
-    process interns information
-    whatnext
-    Build HTML
+  N/A
 
+  ## Questions
+
+  If you have any questions about the project you can reach out to me via email or GitHub with the information below. 
+
+  >Email: BrahmVanH@gmail.com
+
+  >GitHub: [Brahmvanh](https://github.com/Brahmvanh)
 

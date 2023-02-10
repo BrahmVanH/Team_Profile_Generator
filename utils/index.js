@@ -83,7 +83,7 @@ const askForEngineer = () => {
             },
         ])
             .then((input) => {
-                const engineer = new Engineer(input.engineerName, input.engineerEmployeeId, input.engineerEmail, input.engineerOfficeNumber);
+                const engineer = new Engineer(input.engineerName, input.engineerEmployeeId, input.engineerEmail, input.engineerGitHubUserName);
                 teamMembers.push(engineer);
                 askWhatNext();
             })
