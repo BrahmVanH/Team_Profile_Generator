@@ -43,6 +43,7 @@ const promptManager =  () => {
         .prompt(teamManagerQuestions)
             .then((input) => {
                 const manager = new Manager(input.teamManagerName, input.teamManagerEmployeeId, input.teamManagerEmail, input.teamManagerOfficeNumber )
+                console.log(manager.getEmployeeEmail());
                 teamMembers.push(manager);
                 askWhatNext();
             })

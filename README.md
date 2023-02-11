@@ -41,13 +41,15 @@
 
   Inquirer v8.2.4
 
+
   ## Contributions
 
   N/A
 
   ## Test
 
-  N/A
+  In your terminal navigate to 'tests' directory in repository. 
+  Enter 'npm test' in terminal. 
 
   ## Questions
 
