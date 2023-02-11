@@ -2,14 +2,12 @@ const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
 
-const teamManagerQuestions = require('./teamManagerPrompt');
+const teamManagerQuestions = require('./src/teamManagerPrompt');
 
-const htmlContent = require('./htmlContent.js');
-
-const Manager = require('../lib/teamManager');
-const Engineer = require('../lib/engineer')
-const Intern = require('../lib/intern');
-const renderMainHtmlContent = require('./htmlContent.js');
+const Manager = require('./lib/teamManager');
+const Engineer = require('./lib/engineer')
+const Intern = require('./lib/intern');
+const renderMainHtmlContent = require('./src/htmlContent');
 
 const dist_dir = path.resolve(__dirname, 'dist');
 
